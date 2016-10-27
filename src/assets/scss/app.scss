@@ -1,0 +1,318 @@
+@import 'settings';
+@import 'foundation-emails';
+
+a {
+    text-decoration: none;
+}
+
+// old outlook and gmail don't respect alignments set on parent elements
+.mast-w {
+    text-align: right;
+    table {
+        text-align: right;
+    }
+    tr {
+        text-align: right;
+    }
+    th {
+        text-align: right;
+    }
+    .w-logo-link {
+        text-align: right;
+    }
+}
+
+.w-logo {
+    width: 75px !important;
+    display: inline-block;
+}
+
+.college-logo {
+    width: 220px !important;
+    display: block;
+}
+
+.post_image {
+    border: 5px solid $white;
+    box-shadow: inset 0 0 5px $black, 0 0 2px $dark-gray;
+    width: 100%;
+    height: auto;
+}
+
+.feature_hero {
+    .feature_image {
+        border: 5px solid $white;
+        box-shadow: inset 0 0 5px $black, 0 0 2px $dark-gray;
+        width: 100%;
+        max-width: 588px;
+        height: auto;
+    }
+}
+
+.read_more {
+    width: 125px;
+}
+
+.post_title {
+    -moz-hyphens:none;
+    -ms-hyphens:none;
+    -webkit-hyphens: none;
+    hyphens:none;
+    word-break: keep-all;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 22px !important;
+    }
+}
+
+.feature_content {
+    -moz-hyphens:none;
+    -ms-hyphens:none;
+    -webkit-hyphens: none;
+    hyphens:none;
+    word-break: keep-all;
+    border-bottom: 3px solid $medium-gray;
+    p {
+        @media only screen and (max-width: #{$global-breakpoint}) {
+            font-size: 18px !important;
+        }
+    }
+}
+
+.post_content {
+    width: 50%;
+    height: 100%;
+    -moz-hyphens:none;
+    -ms-hyphens:none;
+    -webkit-hyphens: none;
+    hyphens:none;
+    word-break: keep-all;
+    > table {
+        &:first-of-type {
+            height: 100%;
+            th {
+                height: 100%;
+            }
+        }
+    }
+    @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 22px !important;
+    }
+}
+
+.title-bar {
+    background-image: url('https://secure3.convio.net/uw/images/content/pagebuilder/HeadlineBackground.png');
+    background-size: cover;
+    border-bottom: 3px solid $medium-gray;
+    .title-img {
+        width: 300px;
+        height: auto;
+    }
+    .mail_date {
+        font-size: 20px;
+        font-weight: 600;
+        @media only screen and (max-width: #{$global-breakpoint}) {
+            font-size: 16px !important;
+        }
+    }
+}
+
+.uw_header {
+    .mast {
+    }
+    .w-logo {
+    }
+    background-color: $primary-color;
+}
+
+.social {
+    background-color: $primary-color;
+    .social-block {
+        th {
+            text-align: center;
+        }
+        text-align: center;
+        a {
+            text-align: center;
+            img {
+                text-align: center;
+            }
+            .icon {
+                color: $white;
+                display: block;
+                @media only screen and (max-width: #{$global-breakpoint}) {
+                    width: auto !important;
+                    max-height: 50px;
+                }
+            }
+        }
+    }
+}
+
+.events{
+    margin-bottom: 3px solid $medium-gray;
+    .event {
+        th {
+            text-align: center;
+        }
+        margin-bottom: 15px;
+        > table {
+            background-color: $medium-gold;
+            border: 5px solid $white;
+        }
+        .event_container {
+            padding-bottom: 0;
+            height: 170px;
+            .event_date {
+                font-weight: bold !important;
+                text-transform: uppercase;
+                color: $primary-color;
+                font-size: 14px;
+                @media only screen and (max-width: #{$global-breakpoint}) {
+                    font-size: 16px !important;
+                }
+            }
+            .event_title {
+                font-weight: bold !important;
+                font-size: 14px;
+                @media only screen and (max-width: #{$global-breakpoint}) {
+                    font-size: 16px !important;
+                }
+                line-height: 1.4 !important;
+                word-break: keep-all;
+                padding: 10px;
+                -moz-hyphens:none;
+                -ms-hyphens:none;
+                -webkit-hyphens: none;
+                hyphens:none;
+                color: $black;
+            }
+        }
+    }
+    .more_events {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        img {
+            display: inline-block;
+            margin-bottom: -5px;
+            margin-right: 10px;
+        }
+        color: #252525;
+        a {
+            color: #252525;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+    .boundless-img {
+        margin-top: 15px !important;
+    }
+}
+
+.boundless-img {
+    width: 175px !important;
+    display: block;
+}
+
+
+//center tag wont work in old outlook or mobile gmail
+.footer-logos, .footer-buttons {
+    text-align: center;
+    table {
+        text-align: center;
+    }
+    tr {
+        text-align: center;
+        th {
+            text-align: center;
+        }
+    }
+    a {
+        text-align: center;
+    }
+}
+
+.mast-footer {
+    width: 225px !important;
+    display: block;
+}
+
+.submission-button {
+    width: 177px !important;
+    text-align: center;
+    display: block;
+}
+
+.give-button {
+    width: 128px !important;
+    text-align: center;
+    display: block;
+}
+
+.footer-contact {
+    .small {
+        color: $dark-gray;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    a {
+        color: $dark-gray;
+    }
+}
+
+hr {
+    background-color: $medium-gray;
+    color: $medium-gray;
+    height: 3px;
+    border: none;
+}
+
+.college {
+    .around_list {
+        a{
+            p, li {
+                color: $primary-color;
+                padding-bottom: 20px;
+                margin-bottom: 0px;
+                font-weight: 600;
+                -moz-hyphens:none;
+                -ms-hyphens:none;
+                -webkit-hyphens: none;
+                hyphens:none;
+                word-break: keep-all;
+                span {
+                    color: $dark-gray;
+                }
+                @media only screen and (max-width: #{$global-width}) {
+                    font-size: 18px !important;
+                }
+            }
+        }
+    }
+}
+
+.college_wrap {
+    border-bottom: 3px solid $medium-gray;
+}
+
+.social-wrap {
+    background-color: $primary-color;
+}
+
+.section-head {
+    background-color: $medium-gray;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.social-head {
+    background-color: #3F266E;
+}
+
+.unsubscribe {
+    text-decoration: underline;
+    color: $dark-gray;
+    font-weight: bold;
+}
