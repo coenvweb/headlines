@@ -277,11 +277,11 @@ hr {
                 padding-bottom: 20px;
                 margin-bottom: 0px;
                 font-weight: 600;
-                -moz-hyphens:none;
+               -moz-hyphens:none;
                 -ms-hyphens:none;
                 -webkit-hyphens: none;
                 hyphens:none;
-                word-break: keep-all;
+                word-break: keep-all; 
                 span {
                     color: $dark-gray;
                 }
@@ -315,4 +315,20 @@ hr {
     text-decoration: underline;
     color: $dark-gray;
     font-weight: bold;
+}
+
+.scicomm-text {
+    color: white;
+    -moz-hyphens:none;
+    -ms-hyphens:none;
+    -webkit-hyphens: none;
+    hyphens:none;
+    word-break: keep-all;
+}
+
+.scicomm {
+    img {
+        width: 150px;
+        box-shadow: inset 0 0 3px $black, 0 0 2px $dark-gray;
+    }
 }
