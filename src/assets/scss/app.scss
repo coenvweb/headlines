@@ -27,9 +27,17 @@ a {
     display: inline-block;
 }
 
+.scicomm_template {
+    background-color: #f3f3f3;
+}
+
 .college-logo {
     width: 220px !important;
     display: block;
+}
+
+.scicomm_header {
+    margin-bottom: -1px;
 }
 
 .post_image {
@@ -49,8 +57,30 @@ a {
     }
 }
 
+.scicomm_template .feature_image {
+    max-width: none;
+    border: none;
+    box-shadow: none;
+}
+
 .read_more {
     width: 125px;
+}
+
+.scicomm_template .read_more {
+    border: 3px solid #4b2e83;
+    border-radius: 3px;
+    color: #4b2e83;
+    font-weight: 700;
+    line-height: 2.3;
+    margin: 0;
+    padding: 7px 13px;
+}
+
+.scicomm_template .social .read_more{
+    border: 3px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .post_title {
@@ -76,6 +106,10 @@ a {
             font-size: 18px !important;
         }
     }
+}
+
+.scicomm_template .feature_content {
+    border-bottom: 20px solid #ececec;
 }
 
 .post_content {
@@ -152,6 +186,21 @@ a {
     }
 }
 
+.scicomm_template .college_wrap {
+    background-color: $primary-color;
+    .scicomm-head, .scicomm-desc {
+        color: $white;
+    }
+    .around_list a p {
+        color: $white;
+        font-weight: 700;
+        padding-bottom: 1rem;
+        span {
+            color: lighten($secondary-color, 25%);
+        }
+    }
+}
+
 .events{
     margin-bottom: 3px solid $medium-gray;
     .event {
@@ -206,6 +255,17 @@ a {
             font-weight: bold;
             text-decoration: underline;
         }
+    }
+}
+
+.scicomm_template .events {
+    .section-head {
+        text-transform: none;
+        color: $primary-color;
+    }
+    .event_calendar_icon {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -311,8 +371,17 @@ hr {
     width: 100%;
 }
 
+.scicomm_template .section-head {
+    background-color: transparent;
+}
+
 .social-head {
     background-color: #3F266E;
+}
+
+.scicomm_template .social-head {
+    background-color: transparent;
+    color: white;
 }
 
 .unsubscribe {
