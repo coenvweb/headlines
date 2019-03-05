@@ -213,8 +213,13 @@ a {
             border: 5px solid $white;
         }
         .event_container {
-            padding-bottom: 0;
-            height: 170px;
+            height: 120px;
+            display: table;
+            padding: 1rem;
+            & > a {
+                display: table-cell;
+                vertical-align: middle;
+            }
             .event_date {
                 font-weight: bold !important;
                 text-transform: uppercase;
@@ -266,6 +271,7 @@ a {
     .event_calendar_icon {
         margin-left: 10px;
         margin-right: 10px;
+        padding-bottom: 26px;
     }
 }
 
