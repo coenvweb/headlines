@@ -40,6 +40,17 @@ a {
     margin-bottom: -1px;
 }
 
+.scicomm_date {
+    background-color: #232323;
+    color: white;
+    padding-right:12px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0!important;
+    height: 32px;
+    line-height: 2;
+}
+
 .post_image {
     border: 5px solid $white;
     box-shadow: inset 0 0 5px $black, 0 0 2px $dark-gray;
@@ -137,6 +148,7 @@ a {
     background-image: url('https://secure3.convio.net/uw/images/content/pagebuilder/HeadlineBackground.png');
     background-size: cover;
     border-bottom: 3px solid $medium-gray;
+    margin-top: 0;
     .title-img {
         width: 300px;
         height: auto;
