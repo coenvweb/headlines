@@ -1,3 +1,13 @@
+<script type="text/javascript">
+    window.onload = function() {
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
+    var date = new Date();
+  
+    document.getElementById('date').innerHTML = months[date.getMonth()] + ' ' + date.getFullYear();
+  };
+</script>
+<!--delete EVERYTHING above here in Marketo-->
+
 <container>
     <row class="uw_header collapse">
         <th width="28">
@@ -20,7 +30,7 @@
                 <img width="320" src="https://explore.uw.edu/rs/131-AQO-225/images/Headlines_logo.png" alt="College of the Environment Headlines" class="title-img" />
             </center>
             <spacer size="10"></spacer>
-            <p class="text-center mail_date" style="margin-bottom:0px;" valign="bottom">September 2020</p>
+            <p class="text-center mail_date" id="date" style="margin-bottom:0px;" valign="bottom"></p>
         </columns>
         <columns>
         </columns>
